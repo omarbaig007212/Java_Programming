@@ -45,7 +45,7 @@
     - [Video Link](https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=26)
   - [Min Number of deletions in string to make it pallindrome]
     - [Video Link](https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=28)
-  - [Print SCS](print_SCS.cpp)
+  - [Print SCS]
     - [Video Link](https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=29)
   - [Longest Repeating Subsequence]
     - [Video Link](https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=30)
@@ -65,7 +65,7 @@
   - [Pallindrome Partitioning Optimization -> Still Giving TLE on GFG(Will Update if found better)]
     - [Video Link](https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=38)
     - To Solve these problem on GFG [Click Here.](https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1)
-  - [Evaluate Expression to true Recursive](evaluate_expression_to_true.cpp)
+  - [Evaluate Expression to true Recursive]
     - [Video Link](https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=39)
   - [Evaluate Expression to true Memoization: Using Map -> Giving TLE on GFG (Will Update if found better)]
     - [Video Link](https://www.youtube.com/watch?v=ot_XBHyqpFc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=40)
