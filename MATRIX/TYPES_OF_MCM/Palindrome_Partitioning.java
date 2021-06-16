@@ -5,13 +5,13 @@ public class Palindrome_Partitioning {
         String n=sc.nextLine();
         System.out.println(solve(n, 0, n.length()-1));
     }
-    static int min = Integer.MAX_VALUE;
     public static int solve(String s,int i,int j)
     {
         if(i>=j)
             return 0;
         if(isPalindrome(s,i,j)==true)
             return 0;
+        int min = Integer.MAX_VALUE;
         for(int k=i;k<=j-1;k++)
         {
             int temp=solve(s,i, k)+solve(s,k+1, j)+1;
