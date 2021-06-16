@@ -24,21 +24,16 @@ public class Palindrome_Partitioning {
     }
   public static boolean isPalindrome(String s,int i,int j)
   {
-      int flag=0;
-      while(i<=j)
-      {
-        if(s.charAt(i)!=s.charAt(j))
+      StringBuilder str1= new StringBuilder(s);
+        while(i<=j)
         {
-            flag=1;
-            break;
+            if(str1.charAt(i)!=str1.charAt(j))
+            {
+                return false;
+            }
+            i++;
+            j--;
         }
-        i++;
-        j--;
-      }
-      if(flag==1)
-      {
-          return false;
-      }
-      return true;
+        return true;
   }
 }
