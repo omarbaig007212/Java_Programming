@@ -25,7 +25,7 @@ public class Evaluate_Exp_True {
 			}
 			else
 			{
-				if(isTrue==false)
+				if(s[i]==false)
 				{
 					return 1;
 				}
@@ -47,7 +47,7 @@ public class Evaluate_Exp_True {
 				if(isTrue==true)
 					ans=ans+lt*rt;
 				else
-					ans=ans+lt*rf+rt*lf+lf*rf;
+					ans=ans+lt*rf+lf*rt+lf*rf;
 			}	
 			if(s[k]=='|')
 			{
