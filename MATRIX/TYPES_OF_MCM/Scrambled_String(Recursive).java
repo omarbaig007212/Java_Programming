@@ -14,13 +14,13 @@ public class Scrambled_String_Recursive {
 	{
 		if(s.equals(sr))
 			return true;
-		if(s.length()<=1 || sr.length()<=1)
+		if(s.length()<=1 || sr.length()<=1||s.length!=sr.length())
 			return false;
 		int n=s.length();
 		boolean flag=false;
 		for(int i=1;i<n;i++)
 		{
-			if((solve(s.substring(0,i), sr.substring(0,i))&&(solve(s.substring(n-i), sr.substring(n-i))))||
+			if((solve(s.substring(0,i), sr.substring(0,i))&&(solve(s.substring(i), sr.substring(i))))||
 			((solve(s.substring(0,i), sr.substring(i))&&(solve(s.substring(i),sr.substring(0,i)))))==true)
 			{
 				flag= true;
