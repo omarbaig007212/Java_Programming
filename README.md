@@ -1,4 +1,4 @@
-# Dynamic-Programming-Questions-by-Aditya-Verma in JAVA
+# Dynamic-Programming-Questions in JAVA
 
 - **0/1 Knapsack**
   - [Knapsack Recursive]
