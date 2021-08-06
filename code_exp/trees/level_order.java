@@ -70,3 +70,38 @@ public static void levelOrderLinewise(Node node){
     }
   }
 //step---------------------------------------- 333333333333333 (Make a counter vairable to store the number on each level and then iterate and store until the full iteration);
+
+
+public static class Pair{
+      Node node;
+      int level;
+      Pair(Node node,int level)
+      {
+          this.node=node;
+          this.level=level;
+      }
+  }
+  public static void levelOrderLinewise(Node node){
+    // write your code here
+    Queue<Pair> mainQ=new ArrayDeque<>();
+    Pair p=new Pair(node,1);
+    int level=1;
+    mainQ.add(p);
+    while(mainQ.size()>0)
+    {
+        p=mainQ.remove();
+        if(level<p.level)
+        {
+            System.out.println();
+            level=p.level;
+        }
+        System.out.print(p.node.data+" ");
+        for(Node child:p.node.children)
+        {
+            Pair p1=new Pair(child,level+1);
+            mainQ.add(p1);
+        }
+    }
+  }
+
+/// step ------------------------------------------------ 4 (create a Pair class which stores the Node and Level and increases the level+1 on each children);
