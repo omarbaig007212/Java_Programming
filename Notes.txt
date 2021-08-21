@@ -1,0 +1,4 @@
+PriorityQueue->Same as A Complete Binary Tree (CBT),
+               On adding new values the UpHeapify() are called 
+               that will take O(n.log(n)) if we call DownHeapify then the order decreases to O(n) , log(n) here being the height of the tree. instead of traversing to top evertime 
+               this DownHeapify replaces from the Left child and Right child.
