@@ -1,6 +1,3 @@
-// why did it fail for (diff+sum)/2? not yet knowb
-
-
 class Solution {
     public static int ans;
     public int findTargetSumWays(int[] nums, int target) {
@@ -19,14 +16,18 @@ class Solution {
         {
             return 0;
         }
-       
         ans=0;
         int sum=0;
         for(int i=0;i<nums.length;i++)
         {
             sum+=nums[i];
         }
-        // target=(sum+target)/2;
+        if((sum+target)%2!=0)
+        {
+            return 0;
+        }
+        target=(sum+target)/2;
+        
         find(nums.length,nums,target);
         return ans;
     }
@@ -41,7 +42,7 @@ class Solution {
             if(idx>0)
             {
                  find(idx-1,arr,target-arr[idx-1]);
-                 find(idx-1,arr,target+arr[idx-1]);
+                 find(idx-1,arr,target);
             }
     }
 }
