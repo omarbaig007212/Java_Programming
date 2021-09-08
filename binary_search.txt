@@ -8,3 +8,6 @@ optimized....==> (start + (end-start)/2) .... which will be also "(2*start+end-s
 How to check if arr is sorted ASC or DESC? 
 if(arr[0]>arr[n]) DESC;
 if(arr[0]<arr[n]) ASC;
+
+
+1.) ceil and floor of a number--> Binary seach , in ceil return the Start , in floor return the End;
