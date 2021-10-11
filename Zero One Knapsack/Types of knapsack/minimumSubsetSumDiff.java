@@ -14,9 +14,9 @@ public class minimumSubsetSumDiff {
         }
         ArrayList<Integer> arr=SubsetSum(wt, sum);
         int mn=Integer.MAX_VALUE;
-        for(int i=0;i<arr.size()/2;i++)
+        for(int i=0;i<arr.size();i++)
         {
-            mn=Math.min(mn,sum-2*arr.get(i));
+            mn=Math.min(mn,Math.abs(sum-2*arr.get(i)));
         }
         System.out.println(mn);
     }
